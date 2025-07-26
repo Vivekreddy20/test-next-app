@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    border-radius: 50px;
+}
+.header a{
+    display: flex;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+   gap: 10px;
+}
