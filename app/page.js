@@ -1,14 +1,48 @@
 import Link from "next/link";
-
+import classes from "./page.module.css"
 export default function Home(){
   return (
+    <>
+    <header>
+        <div></div>
+        <div>
+          <div>
+            <h1>Next level food for next level foodies</h1>
+            <p>Taste and share food from all over the world</p>
+          </div>
+          <div>
+            <Link href="/community">community</Link>
+            <Link href="/meals">meals</Link>
+          </div>
+        </div>
+    </header>
     <main>
-      <h1>this is home</h1>
-      <ul>
-        <li><Link href="/meals">Meals</Link></li>
-        <li><Link href="/meals/share">share meals</Link></li>
-        <li><Link href="/community">community</Link></li>
-      </ul>
+    <section className={classes.section}>
+          <h2>How it works</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes, and to
+            connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>Why NextLevel Food?</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes, and to
+            connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
     </main>
+    </>
   )
 }
